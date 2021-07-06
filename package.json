@@ -1,5 +1,5 @@
 {
-  "name": "react-native-alioss",
+  "name": "react-native-ali-oss",
   "version": "0.1.0",
   "description": "aliyun oss for react native",
   "main": "lib/commonjs/index",
