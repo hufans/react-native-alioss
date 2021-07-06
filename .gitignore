@@ -66,3 +66,4 @@ release
 coverage/
 *.hprof
 ios/Pods/**
+.env
