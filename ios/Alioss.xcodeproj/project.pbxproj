@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* Alioss.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Alioss.m */; };
-
+		4100CC42269430DC00FE0242 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC41269430DC00FE0242 /* AliyunOSSiOS.framework */; };
+		4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC442694310F00FE0242 /* libresolv.tbd */; };
+		4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC462694311B00FE0242 /* SystemConfiguration.framework */; };
+		4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC482694312600FE0242 /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +27,12 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libAlioss.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlioss.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
+		4100CC41269430DC00FE0242 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
+		4100CC442694310F00FE0242 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		4100CC462694311B00FE0242 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4100CC482694312600FE0242 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
 		B3E7B5881CC2AC0600A0062D /* Alioss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alioss.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Alioss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alioss.m; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */,
+				4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */,
+				4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */,
+				4100CC42269430DC00FE0242 /* AliyunOSSiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,14 +58,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4100CC432694310F00FE0242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4100CC482694312600FE0242 /* CoreTelephony.framework */,
+				4100CC462694311B00FE0242 /* SystemConfiguration.framework */,
+				4100CC442694310F00FE0242 /* libresolv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
 				B3E7B5881CC2AC0600A0062D /* Alioss.h */,
+				4100CC41269430DC00FE0242 /* AliyunOSSiOS.framework */,
 				B3E7B5891CC2AC0600A0062D /* Alioss.m */,
-
 				134814211AA4EA7D00B7C361 /* Products */,
+				4100CC432694310F00FE0242 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				B3E7B58A1CC2AC0600A0062D /* Alioss.m in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +238,10 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -234,13 +252,16 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Alioss;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -251,7 +272,6 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Alioss;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Release;
 		};
