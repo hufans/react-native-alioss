@@ -18,6 +18,7 @@
 		4100CC5D2694323F00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC542694323F00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.m */; };
 		4100CC5E2694323F00FE0242 /* RNAliyunOSS+BUCKET.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC572694323F00FE0242 /* RNAliyunOSS+BUCKET.m */; };
 		4100CC602694352F00FE0242 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */; };
+		BD91C8D2D7B9C5C32D6E2CF8 /* libPods-Alioss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,8 +53,11 @@
 		4100CC562694323F00FE0242 /* RNAliyunOSS+LOG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+LOG.h"; sourceTree = "<group>"; };
 		4100CC572694323F00FE0242 /* RNAliyunOSS+BUCKET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+BUCKET.m"; sourceTree = "<group>"; };
 		4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
+		81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Alioss.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB03DD6FA60CE0B85044C1C /* Pods-Alioss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alioss.release.xcconfig"; path = "Target Support Files/Pods-Alioss/Pods-Alioss.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* Alioss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alioss.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Alioss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alioss.m; sourceTree = "<group>"; };
+		CBAF876F80BB97DC249F2DB3 /* Pods-Alioss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alioss.debug.xcconfig"; path = "Target Support Files/Pods-Alioss/Pods-Alioss.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */,
 				4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */,
 				4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */,
+				BD91C8D2D7B9C5C32D6E2CF8 /* libPods-Alioss.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,7 @@
 				4100CC482694312600FE0242 /* CoreTelephony.framework */,
 				4100CC462694311B00FE0242 /* SystemConfiguration.framework */,
 				4100CC442694310F00FE0242 /* libresolv.tbd */,
+				81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,7 +117,18 @@
 				B3E7B5891CC2AC0600A0062D /* Alioss.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				4100CC432694310F00FE0242 /* Frameworks */,
+				D5E07AE916E6358301725077 /* Pods */,
 			);
+			sourceTree = "<group>";
+		};
+		D5E07AE916E6358301725077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF876F80BB97DC249F2DB3 /* Pods-Alioss.debug.xcconfig */,
+				ADB03DD6FA60CE0B85044C1C /* Pods-Alioss.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "Alioss" */;
 			buildPhases = (
+				E6D118C123FE55BD3EFA5B80 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -165,6 +183,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6D118C123FE55BD3EFA5B80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alioss-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -279,6 +322,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBAF876F80BB97DC249F2DB3 /* Pods-Alioss.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +345,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB03DD6FA60CE0B85044C1C /* Pods-Alioss.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
