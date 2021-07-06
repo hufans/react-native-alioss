@@ -21,7 +21,7 @@
 /**
  the flag of request canceled.
  */
-@property (atomic, assign) BOOL isCancelled;
+@property (nonatomic, assign) BOOL isCancelled;
 
 /**
  the flag of verification about crc64
@@ -32,10 +32,5 @@
  Cancels the request
  */
 - (void)cancel;
-
-/**
- Gets the query parameters' dictionary according to the properties.
- */
-- (NSDictionary *)requestParams;
 
 @end

@@ -9,10 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "OSSFileLogger.h"
 
-#import "NSMutableDictionary+OSS.h"
-#import "NSMutableData+OSS_CRC.h"
-#import "NSDate+OSS.h"
-
 @class OSSFederationToken;
 
 @interface OSSUtil : NSObject
@@ -71,6 +67,5 @@
 - (BOOL)oss_isNotEmpty;
 - (NSString *)oss_stringByAppendingPathComponentForURL:(NSString *)path;
 + (NSString *)oss_documentDirectory;
-- (NSString *)oss_urlEncodedString;
 
 @end

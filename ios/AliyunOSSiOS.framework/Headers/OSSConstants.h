@@ -47,7 +47,6 @@ typedef NS_ENUM(NSInteger, OSSOperationType) {
     OSSOperationTypeCreateBucket,
     OSSOperationTypeDeleteBucket,
     OSSOperationTypeGetBucket,
-    OSSOperationTypeGetBucketInfo,
     OSSOperationTypeGetBucketACL,
     OSSOperationTypeHeadObject,
     OSSOperationTypeGetObject,
@@ -65,10 +64,7 @@ typedef NS_ENUM(NSInteger, OSSOperationType) {
     OSSOperationTypeListMultipart,
     OSSOperationTypeListMultipartUploads,
     OSSOperationTypeTriggerCallBack,
-    OSSOperationTypeImagePersist,
-    OSSOperationTypeRestoreObject,
-    OSSOperationTypePutSymlink,
-    OSSOperationTypeGetSymlink,
+    OSSOperationTypeImagePersist
 };
 
 /**
@@ -104,13 +100,6 @@ typedef NS_ENUM(NSInteger, OSSXMLDictionaryNodeNameMode)
     OSSXMLDictionaryNodeNameModeNever
 };
 
-typedef NS_ENUM(NSInteger, OSSBucketStorageClass)
-{
-    OSSBucketStorageClassStandard,
-    OSSBucketStorageClassIA,
-    OSSBucketStorageClassArchive
-};
-
 typedef NSString * OSSXMLDictionaryAttributeName NS_EXTENSIBLE_STRING_ENUM;
 
 OBJC_EXTERN OSSXMLDictionaryAttributeName const OSSXMLDictionaryAttributesKey;
@@ -118,12 +107,5 @@ OBJC_EXTERN OSSXMLDictionaryAttributeName const OSSXMLDictionaryCommentsKey;
 OBJC_EXTERN OSSXMLDictionaryAttributeName const OSSXMLDictionaryTextKey;
 OBJC_EXTERN OSSXMLDictionaryAttributeName const OSSXMLDictionaryNodeNameKey;
 OBJC_EXTERN OSSXMLDictionaryAttributeName const OSSXMLDictionaryAttributePrefix;
-
-OBJC_EXTERN NSString * const OSSHTTPMethodHEAD;
-OBJC_EXTERN NSString * const OSSHTTPMethodGET;
-OBJC_EXTERN NSString * const OSSHTTPMethodPUT;
-OBJC_EXTERN NSString * const OSSHTTPMethodPOST;
-OBJC_EXTERN NSString * const OSSHTTPMethodDELETE;
-
 
 NS_ASSUME_NONNULL_END

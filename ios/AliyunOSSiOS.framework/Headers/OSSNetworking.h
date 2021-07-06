@@ -34,7 +34,8 @@
  The network interface which OSSClient uses for network read and write operations.
  */
 @interface OSSNetworking : NSObject <NSURLSessionDelegate, NSURLSessionDataDelegate>
-@property (nonatomic, strong) NSURLSession * session;
+@property (nonatomic, strong) NSURLSession * dataSession;
+@property (nonatomic, strong) NSURLSession * uploadFileSession;
 @property (nonatomic, assign) BOOL isUsingBackgroundSession;
 @property (nonatomic, strong) OSSSyncMutableDictionary * sessionDelagateManager;
 @property (nonatomic, strong) OSSNetworkingConfiguration * configuration;
