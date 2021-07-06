@@ -8,7 +8,7 @@
 #import "RNAliyunOSS+DOWNLOAD.h"
 #import <React/RCTLog.h>
 #import <React/RCTConvert.h>
-@implementation RNAliyunOSS (DOWNLOAD)
+@implementation Alioss (DOWNLOAD)
 
 
 /**

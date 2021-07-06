@@ -5,8 +5,8 @@
 //  Created by 罗章 on 2018/5/8.
 //
 
-#import "RNAliyunOSS.h"
+#import "Alioss.h"
 
-@interface RNAliyunOSS (LOG)
+@interface Alioss (LOG)
 
 @end

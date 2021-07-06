@@ -7,7 +7,7 @@
 
 #import "RNAliyunOSS+OBJECT.h"
 
-@implementation RNAliyunOSS (OBJECT)
+@implementation Alioss (OBJECT)
 
 /*
  asyncListObjects

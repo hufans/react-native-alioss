@@ -5,7 +5,7 @@
 
 #import "RNAliyunOSS+UPLOAD.h"
 
-@implementation RNAliyunOSS (UPLOAD)
+@implementation Alioss (UPLOAD)
 
 /**
  Asynchronous uploading

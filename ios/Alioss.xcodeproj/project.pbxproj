@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4100CC42269430DC00FE0242 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC41269430DC00FE0242 /* AliyunOSSiOS.framework */; };
 		4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC442694310F00FE0242 /* libresolv.tbd */; };
 		4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC462694311B00FE0242 /* SystemConfiguration.framework */; };
 		4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC482694312600FE0242 /* CoreTelephony.framework */; };
+		4100CC582694323F00FE0242 /* RNAliyunOSS+UPLOAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC4D2694323E00FE0242 /* RNAliyunOSS+UPLOAD.m */; };
+		4100CC592694323F00FE0242 /* RNAliyunOSS+LOG.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC4F2694323E00FE0242 /* RNAliyunOSS+LOG.m */; };
+		4100CC5A2694323F00FE0242 /* RNAliyunOSS+AUTH.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC512694323E00FE0242 /* RNAliyunOSS+AUTH.m */; };
+		4100CC5B2694323F00FE0242 /* RNAliyunOSS+OBJECT.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC522694323E00FE0242 /* RNAliyunOSS+OBJECT.m */; };
+		4100CC5C2694323F00FE0242 /* RNAliyunOSS+DOWNLOAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC532694323E00FE0242 /* RNAliyunOSS+DOWNLOAD.m */; };
+		4100CC5D2694323F00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC542694323F00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.m */; };
+		4100CC5E2694323F00FE0242 /* RNAliyunOSS+BUCKET.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC572694323F00FE0242 /* RNAliyunOSS+BUCKET.m */; };
+		4100CC602694352F00FE0242 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,10 +34,24 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libAlioss.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlioss.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4100CC41269430DC00FE0242 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
 		4100CC442694310F00FE0242 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
 		4100CC462694311B00FE0242 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		4100CC482694312600FE0242 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		4100CC4A2694323E00FE0242 /* RNAliyunOSS+AUTH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+AUTH.h"; sourceTree = "<group>"; };
+		4100CC4B2694323E00FE0242 /* RNAliyunOSS+DOWNLOAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+DOWNLOAD.h"; sourceTree = "<group>"; };
+		4100CC4C2694323E00FE0242 /* RNAliyunOSS+UPLOAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+UPLOAD.h"; sourceTree = "<group>"; };
+		4100CC4D2694323E00FE0242 /* RNAliyunOSS+UPLOAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+UPLOAD.m"; sourceTree = "<group>"; };
+		4100CC4E2694323E00FE0242 /* RNAliyunOSS+OBJECT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+OBJECT.h"; sourceTree = "<group>"; };
+		4100CC4F2694323E00FE0242 /* RNAliyunOSS+LOG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+LOG.m"; sourceTree = "<group>"; };
+		4100CC502694323E00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+MULTIPARTUPLOAD.h"; sourceTree = "<group>"; };
+		4100CC512694323E00FE0242 /* RNAliyunOSS+AUTH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+AUTH.m"; sourceTree = "<group>"; };
+		4100CC522694323E00FE0242 /* RNAliyunOSS+OBJECT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+OBJECT.m"; sourceTree = "<group>"; };
+		4100CC532694323E00FE0242 /* RNAliyunOSS+DOWNLOAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+DOWNLOAD.m"; sourceTree = "<group>"; };
+		4100CC542694323F00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+MULTIPARTUPLOAD.m"; sourceTree = "<group>"; };
+		4100CC552694323F00FE0242 /* RNAliyunOSS+BUCKET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+BUCKET.h"; sourceTree = "<group>"; };
+		4100CC562694323F00FE0242 /* RNAliyunOSS+LOG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNAliyunOSS+LOG.h"; sourceTree = "<group>"; };
+		4100CC572694323F00FE0242 /* RNAliyunOSS+BUCKET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RNAliyunOSS+BUCKET.m"; sourceTree = "<group>"; };
+		4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* Alioss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alioss.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Alioss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alioss.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,10 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4100CC602694352F00FE0242 /* AliyunOSSiOS.framework in Frameworks */,
 				4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */,
 				4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */,
 				4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */,
-				4100CC42269430DC00FE0242 /* AliyunOSSiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +92,22 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */,
+				4100CC4A2694323E00FE0242 /* RNAliyunOSS+AUTH.h */,
+				4100CC512694323E00FE0242 /* RNAliyunOSS+AUTH.m */,
+				4100CC552694323F00FE0242 /* RNAliyunOSS+BUCKET.h */,
+				4100CC572694323F00FE0242 /* RNAliyunOSS+BUCKET.m */,
+				4100CC4B2694323E00FE0242 /* RNAliyunOSS+DOWNLOAD.h */,
+				4100CC532694323E00FE0242 /* RNAliyunOSS+DOWNLOAD.m */,
+				4100CC562694323F00FE0242 /* RNAliyunOSS+LOG.h */,
+				4100CC4F2694323E00FE0242 /* RNAliyunOSS+LOG.m */,
+				4100CC502694323E00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.h */,
+				4100CC542694323F00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.m */,
+				4100CC4E2694323E00FE0242 /* RNAliyunOSS+OBJECT.h */,
+				4100CC522694323E00FE0242 /* RNAliyunOSS+OBJECT.m */,
+				4100CC4C2694323E00FE0242 /* RNAliyunOSS+UPLOAD.h */,
+				4100CC4D2694323E00FE0242 /* RNAliyunOSS+UPLOAD.m */,
 				B3E7B5881CC2AC0600A0062D /* Alioss.h */,
-				4100CC41269430DC00FE0242 /* AliyunOSSiOS.framework */,
 				B3E7B5891CC2AC0600A0062D /* Alioss.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				4100CC432694310F00FE0242 /* Frameworks */,
@@ -136,6 +171,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4100CC5B2694323F00FE0242 /* RNAliyunOSS+OBJECT.m in Sources */,
+				4100CC5C2694323F00FE0242 /* RNAliyunOSS+DOWNLOAD.m in Sources */,
+				4100CC5A2694323F00FE0242 /* RNAliyunOSS+AUTH.m in Sources */,
+				4100CC5E2694323F00FE0242 /* RNAliyunOSS+BUCKET.m in Sources */,
+				4100CC5D2694323F00FE0242 /* RNAliyunOSS+MULTIPARTUPLOAD.m in Sources */,
+				4100CC592694323F00FE0242 /* RNAliyunOSS+LOG.m in Sources */,
+				4100CC582694323F00FE0242 /* RNAliyunOSS+UPLOAD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +288,9 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**/**",
+					"$(SRCROOT)/../../../../ios/**/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -266,7 +310,9 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**/**",
+					"$(SRCROOT)/../../../../ios/**/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";

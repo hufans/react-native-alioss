@@ -7,7 +7,7 @@
 
 #import "RNAliyunOSS+BUCKET.h"
 
-@implementation RNAliyunOSS (BUCKET)
+@implementation Alioss (BUCKET)
 
 /**
  *异步创建bucket

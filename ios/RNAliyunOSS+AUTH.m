@@ -7,7 +7,7 @@
 
 #import "RNAliyunOSS+AUTH.h"
 
-@implementation RNAliyunOSS (AUTH)
+@implementation  Alioss(AUTH)
 
 
 

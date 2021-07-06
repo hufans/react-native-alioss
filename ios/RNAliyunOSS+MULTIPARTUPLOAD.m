@@ -5,7 +5,7 @@
 
 #import "RNAliyunOSS+MULTIPARTUPLOAD.h"
 
-@implementation RNAliyunOSS (MULTIPARTUPLOAD)
+@implementation Alioss (MULTIPARTUPLOAD)
 
 /*
  *initMultipartUpload

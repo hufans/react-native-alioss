@@ -7,7 +7,7 @@
 
 #import "RNAliyunOSS+LOG.h"
 
-@implementation RNAliyunOSS (LOG)
+@implementation Alioss (LOG)
 
 /**
  enable the dev mode
