@@ -1,13 +1,10 @@
 //
-//  RNAliyunOSS+AUTH.m
-//  aliyun-oss-rn-sdk
-//
-//  Created by 罗章 on 2018/5/8.
-//
+//  AliOssAuth.m
+//  Created by hfan
 
-#import "RNAliyunOSS+AUTH.h"
+#import "AliOss.h"
 
-@implementation  Alioss(AUTH)
+@implementation  AliOss(AUTH)
 
 
 

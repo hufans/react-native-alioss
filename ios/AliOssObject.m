@@ -1,13 +1,10 @@
 //
-//  RNAliyunOSS+OBJECT.m
-//  aliyun-oss-rn-sdk
-//
-//  Created by 罗章 on 2018/5/8.
-//
+//  AliOssObject.m
+//  Created by hfan
 
-#import "RNAliyunOSS+OBJECT.h"
+#import "AliOssObject.h"
 
-@implementation Alioss (OBJECT)
+@implementation AliOss (OBJECT)
 
 /*
  asyncListObjects

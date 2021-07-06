@@ -1,11 +1,10 @@
 //
-//  RNAliyunOSS+UPLOAD.m
-//  aliyun-oss-rn-sdk
-//  Created by 罗章 on 2018/5/8.
+//  AliOssUpload.m
+//  Created by hfan
 
-#import "RNAliyunOSS+UPLOAD.h"
+#import "AliOssUpload.h"
 
-@implementation Alioss (UPLOAD)
+@implementation AliOss (UPLOAD)
 
 /**
  Asynchronous uploading

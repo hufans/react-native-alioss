@@ -1,16 +1,20 @@
+//
+//  AliOss.m
+//  Created by hfan
+
 
 /**
  * Alioss.m refactor comments
  */
 
-#import "Alioss.h"
+#import "AliOss.h"
 #import <React/RCTLog.h>
 #import <React/RCTConvert.h>
 @import Photos;
 @import MobileCoreServices;
 
 
-@implementation Alioss
+@implementation AliOss
 
 /**
  Will be called when this module's first listener is added.

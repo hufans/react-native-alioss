@@ -1,13 +1,10 @@
 //
-//  RNAliyunOSS+BUCKET.m
-//  aliyun-oss-rn-sdk
-//
-//  Created by 罗章 on 2018/5/8.
-//
+//  AliOssBucket.m
+//  Created by hfan
 
-#import "RNAliyunOSS+BUCKET.h"
+#import "AliOssBucket.h"
 
-@implementation Alioss (BUCKET)
+@implementation AliOss (BUCKET)
 
 /**
  *异步创建bucket

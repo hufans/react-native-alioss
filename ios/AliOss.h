@@ -1,15 +1,13 @@
 //
-//  Alioss.h
-//
+//  AliOss.h
 //  Created by hfan
-//
 
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 #import <AliyunOSSiOS/OSSService.h>
 
 
-@interface Alioss : RCTEventEmitter <RCTBridgeModule>
+@interface AliOss : RCTEventEmitter <RCTBridgeModule>
 
 @property OSSClient *client;
 @property OSSClientConfiguration *clientConfiguration;

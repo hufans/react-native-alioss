@@ -1,14 +1,11 @@
 //
-//  RNAliyunOSS+DOWNLOAD.m
-//  aliyun-oss-rn-sdk
-//
-//  Created by 罗章 on 2018/5/8.
-//
+//  AliOssDownload.m
+//  Created by hfan
 
-#import "RNAliyunOSS+DOWNLOAD.h"
+#import "AliOssDownload.h"
 #import <React/RCTLog.h>
 #import <React/RCTConvert.h>
-@implementation Alioss (DOWNLOAD)
+@implementation AliOss (DOWNLOAD)
 
 
 /**
