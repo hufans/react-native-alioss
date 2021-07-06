@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.tsx"],"names":["Alioss","NativeModules"],"mappings":";;;;;;;AAAA;;AAMA,MAAM;AAAEA,EAAAA;AAAF,IAAaC,0BAAnB;eAEeD,M","sourcesContent":["import { NativeModules } from 'react-native';\n\ntype AliossType = {\n  multiply(a: number, b: number): Promise<number>;\n};\n\nconst { Alioss } = NativeModules;\n\nexport default Alioss as AliossType;\n"]}

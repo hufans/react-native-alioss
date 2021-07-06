@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-		5E555C0D2413F4C50049A1A2 /* Alioss.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Alioss.m */; };
-
+		4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC442694310F00FE0242 /* libresolv.tbd */; };
+		4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC462694311B00FE0242 /* SystemConfiguration.framework */; };
+		4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC482694312600FE0242 /* CoreTelephony.framework */; };
+		4100CC582694323F00FE0242 /* AliOssUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC4D2694323E00FE0242 /* AliOssUpload.m */; };
+		4100CC592694323F00FE0242 /* AliOssLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC4F2694323E00FE0242 /* AliOssLog.m */; };
+		4100CC5A2694323F00FE0242 /* AliOssAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC512694323E00FE0242 /* AliOssAuth.m */; };
+		4100CC5B2694323F00FE0242 /* AliOssObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC522694323E00FE0242 /* AliOssObject.m */; };
+		4100CC5C2694323F00FE0242 /* AliOssDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC532694323E00FE0242 /* AliOssDownload.m */; };
+		4100CC5D2694323F00FE0242 /* AliOssMultipartUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC542694323F00FE0242 /* AliOssMultipartUpload.m */; };
+		4100CC5E2694323F00FE0242 /* AliOssBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC572694323F00FE0242 /* AliOssBucket.m */; };
+		4100CC602694352F00FE0242 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */; };
+		BD91C8D2D7B9C5C32D6E2CF8 /* libPods-Alioss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +35,29 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libAlioss.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlioss.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
-		B3E7B5881CC2AC0600A0062D /* Alioss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alioss.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* Alioss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alioss.m; sourceTree = "<group>"; };
-
+		4100CC442694310F00FE0242 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		4100CC462694311B00FE0242 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		4100CC482694312600FE0242 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		4100CC4A2694323E00FE0242 /* AliOssAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssAuth.h; sourceTree = "<group>"; };
+		4100CC4B2694323E00FE0242 /* AliOssDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssDownload.h; sourceTree = "<group>"; };
+		4100CC4C2694323E00FE0242 /* AliOssUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssUpload.h; sourceTree = "<group>"; };
+		4100CC4D2694323E00FE0242 /* AliOssUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssUpload.m; sourceTree = "<group>"; };
+		4100CC4E2694323E00FE0242 /* AliOssObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssObject.h; sourceTree = "<group>"; };
+		4100CC4F2694323E00FE0242 /* AliOssLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssLog.m; sourceTree = "<group>"; };
+		4100CC502694323E00FE0242 /* AliOssMultipartUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssMultipartUpload.h; sourceTree = "<group>"; };
+		4100CC512694323E00FE0242 /* AliOssAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssAuth.m; sourceTree = "<group>"; };
+		4100CC522694323E00FE0242 /* AliOssObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssObject.m; sourceTree = "<group>"; };
+		4100CC532694323E00FE0242 /* AliOssDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssDownload.m; sourceTree = "<group>"; };
+		4100CC542694323F00FE0242 /* AliOssMultipartUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssMultipartUpload.m; sourceTree = "<group>"; };
+		4100CC552694323F00FE0242 /* AliOssBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssBucket.h; sourceTree = "<group>"; };
+		4100CC562694323F00FE0242 /* AliOssLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssLog.h; sourceTree = "<group>"; };
+		4100CC572694323F00FE0242 /* AliOssBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssBucket.m; sourceTree = "<group>"; };
+		4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
+		81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Alioss.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB03DD6FA60CE0B85044C1C /* Pods-Alioss.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alioss.release.xcconfig"; path = "Target Support Files/Pods-Alioss/Pods-Alioss.release.xcconfig"; sourceTree = "<group>"; };
+		B3E7B5881CC2AC0600A0062D /* AliOss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOss.h; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* AliOss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOss.m; sourceTree = "<group>"; };
+		CBAF876F80BB97DC249F2DB3 /* Pods-Alioss.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alioss.debug.xcconfig"; path = "Target Support Files/Pods-Alioss/Pods-Alioss.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4100CC602694352F00FE0242 /* AliyunOSSiOS.framework in Frameworks */,
+				4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */,
+				4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */,
+				4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */,
+				BD91C8D2D7B9C5C32D6E2CF8 /* libPods-Alioss.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,15 +84,50 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4100CC432694310F00FE0242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4100CC482694312600FE0242 /* CoreTelephony.framework */,
+				4100CC462694311B00FE0242 /* SystemConfiguration.framework */,
+				4100CC442694310F00FE0242 /* libresolv.tbd */,
+				81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
-				B3E7B5881CC2AC0600A0062D /* Alioss.h */,
-				B3E7B5891CC2AC0600A0062D /* Alioss.m */,
-
+				4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */,
+				4100CC4A2694323E00FE0242 /* AliOssAuth.h */,
+				4100CC512694323E00FE0242 /* AliOssAuth.m */,
+				4100CC552694323F00FE0242 /* AliOssBucket.h */,
+				4100CC572694323F00FE0242 /* AliOssBucket.m */,
+				4100CC4B2694323E00FE0242 /* AliOssDownload.h */,
+				4100CC532694323E00FE0242 /* AliOssDownload.m */,
+				4100CC562694323F00FE0242 /* AliOssLog.h */,
+				4100CC4F2694323E00FE0242 /* AliOssLog.m */,
+				4100CC502694323E00FE0242 /* AliOssMultipartUpload.h */,
+				4100CC542694323F00FE0242 /* AliOssMultipartUpload.m */,
+				4100CC4E2694323E00FE0242 /* AliOssObject.h */,
+				4100CC522694323E00FE0242 /* AliOssObject.m */,
+				4100CC4C2694323E00FE0242 /* AliOssUpload.h */,
+				4100CC4D2694323E00FE0242 /* AliOssUpload.m */,
+				B3E7B5881CC2AC0600A0062D /* AliOss.h */,
+				B3E7B5891CC2AC0600A0062D /* AliOss.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				4100CC432694310F00FE0242 /* Frameworks */,
+				D5E07AE916E6358301725077 /* Pods */,
 			);
+			sourceTree = "<group>";
+		};
+		D5E07AE916E6358301725077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBAF876F80BB97DC249F2DB3 /* Pods-Alioss.debug.xcconfig */,
+				ADB03DD6FA60CE0B85044C1C /* Pods-Alioss.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "Alioss" */;
 			buildPhases = (
+				E6D118C123FE55BD3EFA5B80 /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -114,14 +183,43 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E6D118C123FE55BD3EFA5B80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alioss-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				B3E7B58A1CC2AC0600A0062D /* Alioss.m in Sources */,
-
+				4100CC5B2694323F00FE0242 /* AliOssObject.m in Sources */,
+				4100CC5C2694323F00FE0242 /* AliOssDownload.m in Sources */,
+				4100CC5A2694323F00FE0242 /* AliOssAuth.m in Sources */,
+				4100CC5E2694323F00FE0242 /* AliOssBucket.m in Sources */,
+				4100CC5D2694323F00FE0242 /* AliOssMultipartUpload.m in Sources */,
+				4100CC592694323F00FE0242 /* AliOssLog.m in Sources */,
+				4100CC582694323F00FE0242 /* AliOssUpload.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,35 +321,47 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBAF876F80BB97DC249F2DB3 /* Pods-Alioss.debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**/**",
+					"$(SRCROOT)/../../../../ios/**/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Alioss;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB03DD6FA60CE0B85044C1C /* Pods-Alioss.release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/React/**/**",
+					"$(SRCROOT)/../../../../ios/**/**",
+					"$(SRCROOT)/../node_modules/react-native/React/**/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Alioss;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Release;
 		};
