@@ -1,17 +1,17 @@
-# react-native-alioss
+# rn-alioss
 
 aliyun oss for react native
 
 ## Installation
 
 ```sh
-npm install react-native-alioss
+npm install rn-alioss
 ```
 
 ## Usage
 
 ```js
-import Alioss from "react-native-alioss";
+import Alioss from "rn-alioss";
 
 // ...
 
