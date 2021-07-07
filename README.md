@@ -26,11 +26,11 @@ do nothing
 ## Usage
 
 ```js
-import { Alioss } from "rn-alioss";
+import { AliyunOSS } from "rn-alioss";
 
 // ...
 
-Alioss.enableDevMode();
+AliyunOSS.enableDevMode();
 
 ```
 
