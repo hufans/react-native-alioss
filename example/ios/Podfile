@@ -6,9 +6,13 @@ platform :ios, '10.0'
 target 'AliossExample' do
   config = use_native_modules!
 
-  use_react_native!(:path => config["reactNativePath"])
+  pod 'rn-alioss', :path => '../node_modules/rn-alioss'
 
-  pod 'react-native-alioss', :path => '../..'
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
 
   # Enables Flipper.
   #
