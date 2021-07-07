@@ -11,9 +11,11 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "https://github.com/hufans/react-native-alioss.git/react-native-alioss.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/hufans/react-native-alioss.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm}"
-
+  s.dependency 'React'
+  s.dependency 'AliyunOSSiOS'
   s.dependency "React-Core"
+  s.vendored_frameworks = 'AliyunOSSiOS.framework'
 end
