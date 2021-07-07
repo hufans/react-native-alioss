@@ -1,4 +1,4 @@
-export declare const AliyunOSS: {
+declare const AliyunOSS: {
     enableDevMode(): void;
     /**
      * Initialize the OSS Client
@@ -123,3 +123,4 @@ export declare const AliyunOSS: {
      */
     removeEventListener(event: any): void;
 };
+export { AliyunOSS };
