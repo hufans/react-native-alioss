@@ -5,6 +5,7 @@ import {
   Platform,
   EmitterSubscription,
 } from 'react-native';
+
 const { AliOss } = NativeModules;
 
 let subscription: EmitterSubscription;
@@ -34,7 +35,7 @@ const appendOptions = {
   contentDisposition: '',
 };
 
-export const AliyunOSS = {
+const AliyunOSS = {
   //Enable dev mode
   enableDevMode() {
     AliOss.enableDevMode();
@@ -324,3 +325,4 @@ export const AliyunOSS = {
     }
   },
 };
+export { AliyunOSS };
