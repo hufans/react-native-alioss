@@ -19,7 +19,7 @@ public class AliOssModule extends ReactContextBaseJavaModule {
     private AliOssAuthManager mAuth;
 
     /**
-     * RNAliyunOssModule constructor
+     * AliOssModule constructor
      * @param reactContext
      */
     public AliOssModule(ReactApplicationContext reactContext) {
@@ -34,7 +34,7 @@ public class AliOssModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "RNAliyunOSS";
+        return "AliOss";
     }
 
     /**
