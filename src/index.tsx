@@ -10,8 +10,21 @@ const { AliOss } = NativeModules;
 
 let subscription: EmitterSubscription;
 
+type OSSinit = {
+  maxRetryCount: number;
+  timeoutIntervalForRequest: number;
+  timeoutIntervalForResource: number;
+};
+
+type OssListOptions = {
+  prefix: string;
+  marker?: string;
+  maxKeys?: string;
+  delimiter?: string;
+};
+
 //default configuration for OSS Client
-const conf = {
+const conf: OSSinit = {
   maxRetryCount: 3,
   timeoutIntervalForRequest: 30,
   timeoutIntervalForResource: 24 * 60 * 60,
@@ -25,9 +38,16 @@ let partSize = 128 * 1024;
 const mulitpartUploadConfig = {
   partSize: partSize,
 };
+type AppendType = {
+  appendPosition: number;
+  contentType: string;
+  contentMd5: string;
+  contentEncoding: string;
+  contentDisposition: string;
+};
 
 //appendObject
-const appendOptions = {
+const appendOptions: AppendType = {
   appendPosition: 0,
   contentType: '',
   contentMd5: '',
@@ -112,8 +132,8 @@ const AliyunOSS = {
     bucketName: string,
     objectKey: string,
     filepath: string,
-    options: any
-  ) {
+    options = {}
+  ): Promise<any> {
     return AliOss.asyncUpload(bucketName, objectKey, filepath, options);
   },
 
@@ -125,7 +145,7 @@ const AliyunOSS = {
     objectKey: string,
     filepath = '',
     options = {}
-  ) {
+  ): Promise<any> {
     return AliOss.asyncResumableUpload(
       bucketName,
       objectKey,
@@ -142,14 +162,14 @@ const AliyunOSS = {
     objectKey: string,
     filepath: string,
     options = appendOptions
-  ) {
+  ): Promise<any> {
     return AliOss.asyncAppendObject(bucketName, objectKey, filepath, options);
   },
 
   /**
    * Asynchronously
    */
-  initMultipartUpload(bucketName: string, objectKey: string) {
+  initMultipartUpload(bucketName: string, objectKey: string): Promise<any> {
     return AliOss.initMultipartUpload(bucketName, objectKey);
   },
 
@@ -162,7 +182,7 @@ const AliyunOSS = {
     uploadId: string,
     filepath = '',
     options = mulitpartUploadConfig
-  ) {
+  ): Promise<any> {
     return AliOss.multipartUpload(
       bucketName,
       objectKey,
@@ -175,7 +195,11 @@ const AliyunOSS = {
   /**
    * Asynchronously listParts
    */
-  listParts(bucketName: string, objectKey: string, uploadId: string) {
+  listParts(
+    bucketName: string,
+    objectKey: string,
+    uploadId: string
+  ): Promise<any> {
     return AliOss.listParts(bucketName, objectKey, uploadId);
   },
   /**
@@ -185,7 +209,7 @@ const AliyunOSS = {
     bucketName: string,
     objectKey: string,
     uploadId: string
-  ) {
+  ): Promise<any> {
     return AliOss.abortMultipartUpload(bucketName, objectKey, uploadId);
   },
 
@@ -197,7 +221,7 @@ const AliyunOSS = {
     objectKey: string,
     filepath = '',
     options = imageXOssProcess
-  ) {
+  ): Promise<any> {
     return AliOss.asyncDownload(bucketName, objectKey, filepath, options);
   },
 
@@ -205,7 +229,7 @@ const AliyunOSS = {
     asyncListBuckets
     */
 
-  asyncListBuckets() {
+  asyncListBuckets(): Promise<any> {
     return AliOss.asyncListBuckets();
   },
 
@@ -213,7 +237,7 @@ const AliyunOSS = {
    * Asynchronously getHeadObject
    */
 
-  asyncHeadObject(bucketName: string, objectKey: string) {
+  asyncHeadObject(bucketName: string, objectKey: string): Promise<any> {
     return AliOss.asyncHeadObject(bucketName, objectKey);
   },
 
@@ -221,7 +245,7 @@ const AliyunOSS = {
    * Asynchronously getAsyncObjects
    */
 
-  asyncListObjects(bucketName: string, options: string) {
+  asyncListObjects(bucketName: string, options?: OssListOptions): Promise<any> {
     return AliOss.asyncListObjects(bucketName, options);
   },
 
@@ -235,7 +259,7 @@ const AliyunOSS = {
     desBucketName: string,
     destObjectKey: string,
     options: any
-  ) {
+  ): Promise<any> {
     return AliOss.asyncCopyObject(
       srcBucketName,
       srcObjectKey,
@@ -249,7 +273,7 @@ const AliyunOSS = {
    * Asynchronously doesObjectExist
    */
 
-  doesObjectExist(bucketName: string, objectKey: string) {
+  doesObjectExist(bucketName: string, objectKey: string): Promise<any> {
     return AliOss.doesObjectExist(bucketName, objectKey);
   },
 
@@ -257,28 +281,32 @@ const AliyunOSS = {
    * Asynchronously asyncDeleteObject
    */
 
-  asyncDeleteObject(bucketName: string, objectKey: string) {
+  asyncDeleteObject(bucketName: string, objectKey: string): Promise<any> {
     return AliOss.asyncDeleteObject(bucketName, objectKey);
   },
 
   /**
    * Asynchronously createBucket
    */
-  asyncCreateBucket(bucketName: string, acl = 'private', region: string) {
+  asyncCreateBucket(
+    bucketName: string,
+    acl = 'private',
+    region: string
+  ): Promise<any> {
     return AliOss.asyncCreateBucket(bucketName, acl, region);
   },
 
   /**
    * Asynchronously getBucketACL
    */
-  asyncGetBucketACL(bucketName: string) {
+  asyncGetBucketACL(bucketName: string): Promise<any> {
     return AliOss.asyncGetBucketACL(bucketName);
   },
 
   /**
    * Asynchronously deleteBucket
    */
-  asyncDeleteBucket(bucketName: string) {
+  asyncDeleteBucket(bucketName: string): Promise<any> {
     return AliOss.asyncDeleteBucket(bucketName);
   },
 
