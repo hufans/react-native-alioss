@@ -17,7 +17,6 @@
 		4100CC5C2694323F00FE0242 /* AliOssDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC532694323E00FE0242 /* AliOssDownload.m */; };
 		4100CC5D2694323F00FE0242 /* AliOssMultipartUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC542694323F00FE0242 /* AliOssMultipartUpload.m */; };
 		4100CC5E2694323F00FE0242 /* AliOssBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100CC572694323F00FE0242 /* AliOssBucket.m */; };
-		4100CC602694352F00FE0242 /* AliyunOSSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */; };
 		4100CC6126959D3500FE0242 /* AliOss.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* AliOss.m */; };
 		BD91C8D2D7B9C5C32D6E2CF8 /* libPods-Alioss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */; };
 /* End PBXBuildFile section */
@@ -53,7 +52,6 @@
 		4100CC552694323F00FE0242 /* AliOssBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssBucket.h; sourceTree = "<group>"; };
 		4100CC562694323F00FE0242 /* AliOssLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOssLog.h; sourceTree = "<group>"; };
 		4100CC572694323F00FE0242 /* AliOssBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOssBucket.m; sourceTree = "<group>"; };
-		4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AliyunOSSiOS.framework; sourceTree = "<group>"; };
 		81305CBD86D601F7CDB094E7 /* libPods-Alioss.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Alioss.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* AliOss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOss.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* AliOss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOss.m; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4100CC602694352F00FE0242 /* AliyunOSSiOS.framework in Frameworks */,
 				4100CC492694312600FE0242 /* CoreTelephony.framework in Frameworks */,
 				4100CC472694311B00FE0242 /* SystemConfiguration.framework in Frameworks */,
 				4100CC452694310F00FE0242 /* libresolv.tbd in Frameworks */,
@@ -97,7 +94,6 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				4100CC5F2694352F00FE0242 /* AliyunOSSiOS.framework */,
 				4100CC4A2694323E00FE0242 /* AliOssAuth.h */,
 				4100CC512694323E00FE0242 /* AliOssAuth.m */,
 				4100CC552694323F00FE0242 /* AliOssBucket.h */,
@@ -323,7 +319,6 @@
 					"$(SRCROOT)/../../react-native/React/**/**",
 					"$(SRCROOT)/../../../../ios/**/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**/**",
-					"${SRCROOT}/AliyunOSSiOS.framework/**/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
@@ -346,7 +341,6 @@
 					"$(SRCROOT)/../../react-native/React/**/**",
 					"$(SRCROOT)/../../../../ios/**/**",
 					"$(SRCROOT)/../node_modules/react-native/React/**/**",
-					"${SRCROOT}/AliyunOSSiOS.framework/**/**",
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
