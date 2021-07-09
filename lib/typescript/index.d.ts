@@ -1,116 +1,112 @@
+declare type OSSinit = {
+    maxRetryCount: number;
+    timeoutIntervalForRequest: number;
+    timeoutIntervalForResource: number;
+};
+declare type OssListOptions = {
+    prefix: string;
+    marker?: string;
+    maxKeys?: string;
+    delimiter?: string;
+};
+declare type AppendType = {
+    appendPosition: number;
+    contentType: string;
+    contentMd5: string;
+    contentEncoding: string;
+    contentDisposition: string;
+};
 declare const AliyunOSS: {
     enableDevMode(): void;
     /**
      * Initialize the OSS Client
      * Mode: PlainTextAKSK
      */
-    initWithPlainTextAccessKey(accessKey: string, secretKey: string, endPoint: string, configuration?: {
-        maxRetryCount: number;
-        timeoutIntervalForRequest: number;
-        timeoutIntervalForResource: number;
-    }): void;
+    initWithPlainTextAccessKey(accessKey: string, secretKey: string, endPoint: string, configuration?: OSSinit): void;
     /**
      * Initialize the OSS Client
      * Mode: ImplementedSigner
      */
-    initWithImplementedSigner(signature: string, accessKey: string, endPoint: string, configuration?: {
-        maxRetryCount: number;
-        timeoutIntervalForRequest: number;
-        timeoutIntervalForResource: number;
-    }): void;
+    initWithImplementedSigner(signature: string, accessKey: string, endPoint: string, configuration?: OSSinit): void;
     /**
      * Initialize the OSS Client
      * Mode: SecurityToken (STS)
      */
-    initWithSecurityToken(securityToken: string, accessKey: string, secretKey: string, endPoint: string, configuration?: {
-        maxRetryCount: number;
-        timeoutIntervalForRequest: number;
-        timeoutIntervalForResource: number;
-    }): void;
+    initWithSecurityToken(securityToken: string, accessKey: string, secretKey: string, endPoint: string, configuration?: OSSinit): void;
     /**
      * Initialize the OSS Client
      * Server STS
      */
-    initWithServerSTS(server: string, endPoint: string, configuration?: {
-        maxRetryCount: number;
-        timeoutIntervalForRequest: number;
-        timeoutIntervalForResource: number;
-    }): void;
+    initWithServerSTS(server: string, endPoint: string, configuration?: OSSinit): void;
     /**
      * Asynchronously uploading
      */
-    asyncUpload(bucketName: string, objectKey: string, filepath: string, options: any): any;
+    asyncUpload(bucketName: string, objectKey: string, filepath: string, options?: {}): Promise<any>;
     /**
      * Asynchronously
      */
-    asyncResumableUpload(bucketName: string, objectKey: string, filepath?: string, options?: {}): any;
+    asyncResumableUpload(bucketName: string, objectKey: string, filepath?: string, options?: {}): Promise<any>;
     /**
      * Asynchronously asyncAppendObject
      */
-    asyncAppendObject(bucketName: string, objectKey: string, filepath: string, options?: {
-        appendPosition: number;
-        contentType: string;
-        contentMd5: string;
-        contentEncoding: string;
-        contentDisposition: string;
-    }): any;
+    asyncAppendObject(bucketName: string, objectKey: string, filepath: string, options?: AppendType): Promise<any>;
     /**
      * Asynchronously
      */
-    initMultipartUpload(bucketName: string, objectKey: string): any;
+    initMultipartUpload(bucketName: string, objectKey: string): Promise<any>;
     /**
      * Asynchronously multipartUpload
      */
     multipartUpload(bucketName: string, objectKey: string, uploadId: string, filepath?: string, options?: {
         partSize: number;
-    }): any;
+    }): Promise<any>;
     /**
      * Asynchronously listParts
      */
-    listParts(bucketName: string, objectKey: string, uploadId: string): any;
+    listParts(bucketName: string, objectKey: string, uploadId: string): Promise<any>;
     /**
      * Asynchronously abortMultipartUpload
      */
-    abortMultipartUpload(bucketName: string, objectKey: string, uploadId: string): any;
+    abortMultipartUpload(bucketName: string, objectKey: string, uploadId: string): Promise<any>;
     /**
      * Asynchronously downloading
      */
     asyncDownload(bucketName: string, objectKey: string, filepath?: string, options?: {
         'x-oss-process': string;
-    }): any;
-    asyncListBuckets(): any;
+    }): Promise<any>;
+    asyncListBuckets(): Promise<any>;
     /**
      * Asynchronously getHeadObject
      */
-    asyncHeadObject(bucketName: string, objectKey: string): any;
+    asyncHeadObject(bucketName: string, objectKey: string): Promise<any>;
     /**
      * Asynchronously getAsyncObjects
      */
-    asyncListObjects(bucketName: string, options: string): any;
+    asyncListObjects(bucketName: string, options?: OssListOptions | undefined): Promise<any>;
     /**
      * Asynchronously asyncCopyObject
      */
-    asyncCopyObject(srcBucketName: string, srcObjectKey: string, desBucketName: string, destObjectKey: string, options: any): any;
+    asyncCopyObject(srcBucketName: string, srcObjectKey: string, desBucketName: string, destObjectKey: string, options: any): Promise<any>;
     /**
      * Asynchronously doesObjectExist
      */
-    doesObjectExist(bucketName: string, objectKey: string): any;
+    doesObjectExist(bucketName: string, objectKey: string): Promise<any>;
     /**
      * Asynchronously asyncDeleteObject
      */
-    asyncDeleteObject(bucketName: string, objectKey: string): any;
+    asyncDeleteObject(bucketName: string, objectKey: string): Promise<any>;
     /**
      * Asynchronously createBucket
      */
-    asyncCreateBucket(bucketName: string, acl: string | undefined, region: string): any;
+    asyncCreateBucket(bucketName: string, acl: string | undefined, region: string): Promise<any>;
     /**
      * Asynchronously getBucketACL
      */
-    asyncGetBucketACL(bucketName: string): any;
+    asyncGetBucketACL(bucketName: string): Promise<any>;
     /**
      * Asynchronously deleteBucket
      */
-    asyncDeleteBucket(bucketName: string): any;
+    asyncDeleteBucket(bucketName: string): Promise<any>;
     /**
      * event listener for native upload/download event
      * @param event one of 'uploadProgress' or 'downloadProgress'
