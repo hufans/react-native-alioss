@@ -120,7 +120,6 @@ init auth client with accessKeyId and accessKeySecret,please refer to the code.y
 
 ```typescript 
 
-
 const endPoint = "https://xxx"
 const configuration = {
     maxRetryCount: 3,
@@ -129,7 +128,7 @@ const configuration = {
  };
 AliyunOSS. initWithPlainTextAccessKey(accessKey: string, secretKey: string, endPoint: string, configuration?: OSSinit): void;
 ```
-[OSSinit](#OSSinit)
+- [OSSinit](###OSSinit)
 ---
 
 ### initWithSecurityToken
@@ -138,7 +137,7 @@ init client with SecurityToken
 ```typescript
 AliyunOSS.initWithSecurityToken(securityToken: string, accessKey: string, secretKey: string, endPoint: string, configuration?: OSSinit): void;
 ```
-[OSSinit](#OSSinit)
+- [OSSinit](###OSSinit)
 ---
 
 ### asyncUpload
@@ -152,7 +151,7 @@ AliyunOSS.asyncUpload(bucketName: string, objectKey: string, filepath: string, o
 ```typescript
 AliyunOSS.asyncAppendObject(bucketName: string, objectKey: string, filepath: string, options?: AppendType): Promise<any>;
 ```
-[AppendType](#AppendType)
+- [AppendType](#AppendType)
 ---
 ### asyncResumableUpload
 ```typescript
