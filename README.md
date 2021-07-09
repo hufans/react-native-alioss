@@ -239,7 +239,7 @@ parameters:
 ```typescript
  AliyunOSS.asyncListObjects(bucketName: string, options?: OssListOptions | undefined): Promise<any>;
 ```
- [OssListOptions](#OssListOptions)
+ - [OssListOptions](#OssListOptions)
 ---
 ### doesObjectExist
 
