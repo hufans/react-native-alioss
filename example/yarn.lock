@@ -3667,10 +3667,8 @@ rimraf@~2.2.6:
   resolved "https://registry.nlark.com/rimraf/download/rimraf-2.2.8.tgz?cache=0&sync_timestamp=1621222688664&other_urls=https%3A%2F%2Fregistry.nlark.com%2Frimraf%2Fdownload%2Frimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
   integrity sha1-5Dm+Kq7jJzIZUnMPmaiSnk/FBYI=
 
-rn-alioss@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.npmjs.org/rn-alioss/-/rn-alioss-0.1.5.tgz#e9790a71903a4505e9f2cd6b9c8f4444e32c5a84"
-  integrity sha512-35o2qLYPg0fpQsG1Wt3YFJBOtVaNAKFJ975+ZYH+MrkGDClmrassHfoBCi7VyAJx7yRcXx0ntau6MEjnh0qQzg==
+rn-alioss@../.:
+  version "0.2.4"
 
 rsvp@^4.8.4:
   version "4.8.5"
