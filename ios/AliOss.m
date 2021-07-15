@@ -93,6 +93,7 @@
     _clientConfiguration.maxRetryCount = [RCTConvert int:configuration[@"maxRetryCount"]]; //default 3
     _clientConfiguration.timeoutIntervalForRequest = [RCTConvert double:configuration[@"timeoutIntervalForRequest"]]; //default 30
     _clientConfiguration.timeoutIntervalForResource = [RCTConvert double:configuration[@"timeoutIntervalForResource"]]; //default 24 * 60 * 60
+    _clientConfiguration.crc64Verifiable = [RCTConvert BOOL:configuration[@"verifyCRC64"]];
 }
 
 

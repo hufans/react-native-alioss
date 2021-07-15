@@ -16,6 +16,7 @@ public class ConfigUtils {
        conf.setSocketTimeout(configuration.getInt("timeoutIntervalForRequest") * 1000);
        conf.setMaxConcurrentRequest(configuration.getInt("maxRetryCount"));
        conf.setMaxErrorRetry(configuration.getInt("maxRetryCount"));
+       conf.setCheckCRC64(configuration.getBoolean("verifyCRC64"));
        return conf;
    }
 }
