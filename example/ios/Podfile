@@ -6,7 +6,7 @@ platform :ios, '10.0'
 target 'AliossExample' do
   config = use_native_modules!
 
-  pod 'react-native-alioss', :path => '../node_modules/rn-alioss'
+  # pod 'react-native-alioss', :path => '../..'
 
   use_react_native!(
     :path => config[:reactNativePath],
