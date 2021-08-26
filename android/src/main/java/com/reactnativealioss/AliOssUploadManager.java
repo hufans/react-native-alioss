@@ -78,14 +78,15 @@ public class AliOssUploadManager {
         // 2. inputstream -> temp file path
         Cursor cursor = null;
         try {
-            String[] proj = {MediaStore.Images.Media.DATA};
-            cursor = context.getCurrentActivity().getContentResolver().query(selectedVideoUri, proj, null, null, null);
-            if (cursor == null) sourceFile = selectedVideoUri.getPath();
-            int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-            cursor.moveToFirst();
-            sourceFile = cursor.getString(column_index);
+            // String[] proj = {MediaStore.Images.Media.DATA};
+            // cursor = context.getCurrentActivity().getContentResolver().query(selectedVideoUri, proj, null, null, null);
+            // if (cursor == null) sourceFile = selectedVideoUri.getPath();
+            // int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+            // cursor.moveToFirst();
+            // sourceFile = cursor.getString(column_index);
+            sourceFile = FileUtils.getFilePathFromURI(context.getCurrentActivity(), selectedVideoUri);
         } catch (Exception e) {
-            // sourceFile = FileUtils.getFilePathFromURI(context.getCurrentActivity(), selectedVideoUri);
+            sourceFile = FileUtils.getFilePathFromURI(context.getCurrentActivity(), selectedVideoUri);
         } finally {
             if (cursor != null) {
                 cursor.close();
